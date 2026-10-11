@@ -102,7 +102,7 @@ export default function LotteryWheel() {
   const card = "border-[3px] border-[#141414] bg-[#fffdf8] shadow-[8px_8px_0_#141414]";
 
   return (
-    <div className="grid items-start gap-10 lg:grid-cols-[1fr_minmax(0,440px)_1fr]">
+    <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 xl:grid-cols-[1fr_minmax(0,440px)_1fr]">
       {/* 抽取項目輸入 */}
       <section className={`${card} flex flex-col gap-4 p-5`}>
         <div className="flex items-center justify-between">
@@ -138,8 +138,8 @@ export default function LotteryWheel() {
         </button>
       </section>
 
-      {/* 轉盤 */}
-      <section className="flex flex-col items-center gap-5">
+      {/* 轉盤：手機與平板放最上面，寬螢幕放中間 */}
+      <section className="order-first flex flex-col items-center gap-5 md:col-span-2 xl:order-none xl:col-span-1">
         <div className="relative aspect-square w-full max-w-[440px]">
           {/* 硬陰影 */}
           <div className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-full bg-[#141414]" />

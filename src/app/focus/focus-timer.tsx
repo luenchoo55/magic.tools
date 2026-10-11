@@ -304,7 +304,7 @@ function Timer({ initial, persist = false }: { initial: Saved; persist?: boolean
   const cycleDone = completed % LONG_BREAK_EVERY;
 
   return (
-    <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+    <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
       {/* 主計時區 */}
       <section className={`${card} flex flex-col items-center gap-6 p-5 sm:p-8`}>
         {/* 模式切換 */}
@@ -422,7 +422,7 @@ function Timer({ initial, persist = false }: { initial: Saved; persist?: boolean
       </section>
 
       {/* 側邊設定 */}
-      <div className="flex flex-col gap-10">
+      <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 lg:grid-cols-1">
         {mode === "tasks" ? (
           <TaskPanel
             tasks={tasks}

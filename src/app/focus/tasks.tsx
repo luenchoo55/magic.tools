@@ -169,8 +169,8 @@ export function TaskBoard({ tasks, selectedId, now, onSelect, onToggle, onRemove
                 selected ? "bg-[#fdf3d0]" : "hover:bg-[#faf7ef]"
               }`}
             >
-              <span className="flex items-center justify-between gap-3">
-                <span className={`truncate text-lg font-black ${task.doneAt ? "line-through" : ""}`}>
+              <span className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+                <span className={`min-w-0 max-w-full truncate text-lg font-black ${task.doneAt ? "line-through" : ""}`}>
                   {task.title}
                 </span>
                 <span

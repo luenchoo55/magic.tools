@@ -2,7 +2,7 @@ import { OMIKUJI } from "./data";
 import { GRADE_STYLE, toKanji, type RackEntry } from "./shared";
 
 const INK = "#141414";
-const ROW_HEIGHT = 96;
+const ROW_HEIGHT = 112;
 
 type OmikujiRackProps = {
   entries: RackEntry[];
@@ -158,7 +158,7 @@ function RackSlip({
           type="button"
           onClick={onTie}
           disabled={disabled}
-          className="absolute bottom-0 whitespace-nowrap border border-[#141414] bg-white px-1 text-[10px] font-black hover:bg-[#f0c54b] disabled:opacity-50"
+          className="absolute bottom-1 h-6 whitespace-nowrap border-2 border-[#141414] bg-white px-1.5 text-xs font-black hover:bg-[#f0c54b] disabled:opacity-50"
         >
           綁上
         </button>

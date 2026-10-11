@@ -127,9 +127,9 @@ function Draw({ initialRack, persist = false }: { initialRack: RackEntry[]; pers
   const lookupValid = Number.isInteger(lookupNo) && lookupNo >= 1 && lookupNo <= 100;
 
   return (
-    <div className="grid items-start gap-10 lg:grid-cols-[340px_minmax(0,1fr)]">
+    <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[340px_minmax(0,1fr)]">
       {/* 左側：籤筒與操作 */}
-      <div className="flex flex-col gap-10">
+      <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 lg:grid-cols-1">
         <section className={`${card} flex flex-col items-center gap-5 p-5`}>
           <h2 className="self-start text-2xl font-black">搖籤</h2>
 
@@ -242,7 +242,7 @@ function Draw({ initialRack, persist = false }: { initialRack: RackEntry[]; pers
       </div>
 
       {/* 右側：籤詩與解說 */}
-      <div className="flex flex-col gap-10">
+      <div className="flex min-w-0 flex-col gap-10">
         {result && !shaking ? (
           <SlipCard
             key={`${result.no}-${history.length}`}

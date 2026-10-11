@@ -49,7 +49,7 @@ export default function ToolShell({
           </div>
 
           {/* 裝飾 */}
-          <div aria-hidden className="absolute right-0 top-10 hidden items-start gap-10 md:flex">
+          <div aria-hidden className="absolute right-0 top-10 hidden items-start gap-10 lg:flex">
             <div
               className="size-32"
               style={{

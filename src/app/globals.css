@@ -12,7 +12,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* 抽籤頁：輕搖籤筒、籤條升起、籤紙展開與擲硬幣 */
+/* 動畫：輕搖籤筒、籤條升起、籤紙展開、擲硬幣 */
 @theme {
   --animate-shake: shake 0.45s ease-in-out infinite;
   --animate-unfold: unfold 0.5s ease-out both;
